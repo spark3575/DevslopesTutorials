@@ -13,6 +13,7 @@
 		B081EDF91EC66B5300F0BDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B081EDF71EC66B5300F0BDD0 /* Main.storyboard */; };
 		B081EDFB1EC66B5300F0BDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B081EDFA1EC66B5300F0BDD0 /* Assets.xcassets */; };
 		B081EDFE1EC66B5300F0BDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B081EDFC1EC66B5300F0BDD0 /* LaunchScreen.storyboard */; };
+		B081EE081EC66C4900F0BDD0 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = B081EE071EC66C4900F0BDD0 /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B081EDFA1EC66B5300F0BDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B081EDFD1EC66B5300F0BDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B081EDFF1EC66B5300F0BDD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B081EE061EC66C4900F0BDD0 /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		B081EE071EC66C4900F0BDD0 /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		B081EDED1EC66B5300F0BDD0 /* DevslopesTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				B081EE051EC66C0400F0BDD0 /* Services */,
 				B081EDF11EC66B5300F0BDD0 /* AppDelegate.h */,
 				B081EDF21EC66B5300F0BDD0 /* AppDelegate.m */,
 				B081EDF41EC66B5300F0BDD0 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				B081EDEF1EC66B5300F0BDD0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B081EE051EC66C0400F0BDD0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B081EE061EC66C4900F0BDD0 /* HTTPService.h */,
+				B081EE071EC66C4900F0BDD0 /* HTTPService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B081EDF61EC66B5300F0BDD0 /* ViewController.m in Sources */,
+				B081EE081EC66C4900F0BDD0 /* HTTPService.m in Sources */,
 				B081EDF31EC66B5300F0BDD0 /* AppDelegate.m in Sources */,
 				B081EDF01EC66B5300F0BDD0 /* main.m in Sources */,
 			);
