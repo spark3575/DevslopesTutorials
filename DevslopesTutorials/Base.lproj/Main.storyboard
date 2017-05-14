@@ -112,11 +112,90 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="nBu-Wi-mwh" id="J2b-fA-cwj"/>
+                        <segue destination="LJS-By-LGz" kind="presentation" identifier="videoVC" id="Bzz-dO-PHB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="274" y="122"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="DXS-Bi-qdp">
+            <objects>
+                <viewController id="LJS-By-LGz" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bw5-ku-x4Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="p7w-lF-hfK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K3h-SU-RxB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7m3-vl-gIA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="iFn-jN-htG"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android Studio Tutorial For Beginners" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCa-1s-tGm">
+                                <rect key="frame" x="16" y="282" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xzC-I8-JJ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to install Android Studio and then go through this tutorial to build your very first app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sc2-z0-pSd">
+                                <rect key="frame" x="16" y="340" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="xBr-S1-7k4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3K-8G-zr1">
+                                <rect key="frame" x="16" y="592" width="343" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="K7e-r3-LBL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="LJS-By-LGz" eventType="touchUpInside" id="c4P-hT-kAp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i3K-8G-zr1" firstAttribute="leading" secondItem="K3h-SU-RxB" secondAttribute="leadingMargin" id="54c-Fv-14P"/>
+                            <constraint firstItem="dCa-1s-tGm" firstAttribute="trailing" secondItem="K3h-SU-RxB" secondAttribute="trailingMargin" id="7KN-gP-DYO"/>
+                            <constraint firstItem="dCa-1s-tGm" firstAttribute="leading" secondItem="K3h-SU-RxB" secondAttribute="leadingMargin" id="ADS-cm-1xc"/>
+                            <constraint firstItem="dCa-1s-tGm" firstAttribute="top" secondItem="7m3-vl-gIA" secondAttribute="bottom" constant="8" id="BDn-8z-zLb"/>
+                            <constraint firstItem="Sc2-z0-pSd" firstAttribute="trailing" secondItem="K3h-SU-RxB" secondAttribute="trailingMargin" id="Rvt-uh-LpB"/>
+                            <constraint firstAttribute="trailing" secondItem="7m3-vl-gIA" secondAttribute="trailing" id="TdK-yC-cKO"/>
+                            <constraint firstItem="i3K-8G-zr1" firstAttribute="trailing" secondItem="K3h-SU-RxB" secondAttribute="trailingMargin" id="VKh-id-NR7"/>
+                            <constraint firstItem="Sc2-z0-pSd" firstAttribute="leading" secondItem="K3h-SU-RxB" secondAttribute="leadingMargin" id="YIh-9C-5Z7"/>
+                            <constraint firstItem="7m3-vl-gIA" firstAttribute="leading" secondItem="K3h-SU-RxB" secondAttribute="leading" id="epE-UX-WdX"/>
+                            <constraint firstItem="Sc2-z0-pSd" firstAttribute="top" secondItem="dCa-1s-tGm" secondAttribute="bottom" constant="8" id="fy6-Ji-OAZ"/>
+                            <constraint firstItem="7m3-vl-gIA" firstAttribute="top" secondItem="K3h-SU-RxB" secondAttribute="top" id="qzz-V9-mXh"/>
+                            <constraint firstItem="p7w-lF-hfK" firstAttribute="top" secondItem="i3K-8G-zr1" secondAttribute="bottom" constant="20" id="xm9-hB-BSn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="Sc2-z0-pSd" id="gDN-Tp-gYN"/>
+                        <outlet property="titleLbl" destination="dCa-1s-tGm" id="XOO-9O-Uiv"/>
+                        <outlet property="webView" destination="7m3-vl-gIA" id="UjV-zZ-C46"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQx-Eu-Yr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085.5999999999999" y="121.88905547226388"/>
         </scene>
     </scenes>
 </document>
